@@ -21,9 +21,14 @@ module.exports = {
   paths: {
     artifacts: './src/artifacts',
   },
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {
       chainId: 1337
+    },
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/e66482a2dc3140bfbd321c6d5249a56c",
+      accounts: [`0x51f537860f210a3e9a9d4263862e66a864acd3208c4f4d8882ef48cc997c2518`]
     }
-  },
+  }
 };
